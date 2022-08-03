@@ -11,20 +11,24 @@
       name="description"
       content="A simple schedule organizer for your work day"
     />
+    <!-- Link to incorporate Bootstrap -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
+    <!-- Link to incorporate the save icon, if I choose to use it (I like how my save button looks at the moment) -->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
     />
+    <!-- Link to incorporate the "Open Sans" Google Font -->
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
+    <!-- Link to incorporate the CSS styles file -->
     <link rel="stylesheet" href="./Develop/style.css" />
     <title>Work Day Scheduler</title>
   </head>
@@ -33,24 +37,15 @@
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">
-        A simple scheduling calendar app: No more over- or underestimating your
+        A simple calendar app: No more over- or underestimating your
         day!
       </p>
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
-        <!-- <div class="col-sm-6 col-md-8 col-xl-9">7 AM</div> -->
-        <!-- <div class="col">
-          <div class="col-sm-1">8 AM</div>
-          <textarea
-            class="form-control col-md-8"
-            aria-label="Event text"
-          ></textarea>
-          <div class="col-sm-1">SAVE</div>
-        </div> -->
         <div class="row">
-          <div class="col-1">
+          <div class="col-1 time-block hour #">
             8 AM
           </div>
           <div class="col-10">
@@ -65,7 +60,7 @@
         </div>
 
         <div class="row">
-          <div class="col-1">
+          <div class="col-1 time-block hour">
             9 AM
           </div>
           <div class="col-10">
@@ -78,26 +73,29 @@
             <button type="button" class="btn btn-outline-light">SAVE</button>
           </div>
         </div>
-        <!-- <div class="col-12">10 AM</div>
-        <div class="col-12">11 AM</div>
-        <div class="col-12">12 PM</div>
-        <div class="col-12">1 PM</div>
-        <div class="col-12">2 PM</div>
-        <div class="col-12">3 PM</div>
-        <div class="col-12">4 PM</div>
-        <div class="col-12">5 PM</div>
-        <div class="col-12">6 PM</div>
-        <div class="col-12">7 PM</div>
-        <div class="col-12">8 PM</div>
-        <div class="col-12">9 PM</div>
-        <div class="col-12">10 PM</div>
-        <div class="col-12">11 PM</div>
-        <div class="col-12">12 AM</div> -->
+        
+        <div class="row">
+          <div class="col-1 time-block hour">
+            10 AM
+          </div>
+          <div class="col-10">
+            <textarea
+            class="form-control" placeholder="Event details here"
+            aria-label="Event text"
+          ></textarea>
+          </div>
+          <div class="col-1">
+            <button type="button" class="btn btn-outline-light">SAVE</button>
+          </div>
+        </div>
       </div>
     </div>
 
+    <!-- Link to incorporate jQuery -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- Link to incorporate moment.js (to display all current dates and times) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <!-- Link to incorporate the JS script file -->
     <script src="./Develop/script.js"></script>
   </body>
 </html>
