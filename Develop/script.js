@@ -5,12 +5,13 @@ $("#currentTime").text(
   "The time upon page load is: " + today.format("hh:mm:ss A")
 );
 
+// Creates the variable now to be used later in the if/else/if statement to determine which is the current hour and color code the textareas holding the event details accordingly.
 var now = moment().hour();
 // console.log(now);
 
 // var now = 5;
 
-var eventDetails = $(".row");
+// var eventDetails = $(".row");
 // console.log(eventDetails);
 
 // var scheduledHourMorning = document.getElementsByClassName("hour-morn");
@@ -49,13 +50,15 @@ var eventDetails = $(".row");
 //     // eventBackgroundColor[i].addClass("future");
 //   }
 
-var eventBackgroundColor = $("textarea");
+// var eventBackgroundColor = $("textarea");
 
+// jQuery version of a for each loop to iterate over each element that has class="form-control" (which is the textarea element). This element also has a unique ID that reflects the scheduled hour, which is then compared in an if/else/if statement to appropriately add or remove css styles depending on the current hour determined by the now variable above
 $(".form-control").each(function () {
   var scheduledHour = $(this).attr("id");
   console.log(scheduledHour);
 
-  for (var i = 0; i < eventDetails.length; i++) {
+  // Don't even need for loop??
+  // for (var i = 0; i < eventDetails.length; i++) {
     // console.log("this works 11 times");
     if (scheduledHour < now) {
       console.log("This is in the past");
@@ -73,7 +76,7 @@ $(".form-control").each(function () {
       $(this).removeClass("present");
       $(this).removeClass("past");
     }
-  }
+  // }
 });
 
 // var button = $(".btn")
