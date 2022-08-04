@@ -39,11 +39,12 @@ textarea {
   border-top: 1px solid var(--light);
   padding-top: 8px;
   align-items: center;
-}
-
-.time-block {
   text-align: center;
 }
+
+/* .time-block {
+  text-align: center;
+} */
 
 .hour {
   background-color: rgb(60, 115, 176);
@@ -53,17 +54,18 @@ textarea {
 }
 
 .past {
-  background-color: #d3d3d3;
+  background-color: rgba(165, 180, 196, 0.908);
   color: var(--light);
+  
 }
 
 .present {
-  background-color: #ff6961;
+  background-color: #e8a4a0;
   color: var(--light);
 }
 
 .future {
-  background-color: #77dd77;
+  background-color: #99e399;
   color: var(--light);
 }
 
