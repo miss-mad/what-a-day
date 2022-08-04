@@ -1,3 +1,4 @@
+/* CSS variables to make stylesheet more efficient */
 :root {
   --light: #f8f9fa;
   --black: black;
@@ -8,6 +9,10 @@ body {
   font-size: 16px;
   line-height: 1;
   background-color: #a8d3dd;
+}
+
+p {
+  padding-top: 8px;
 }
 
 textarea {
@@ -53,8 +58,9 @@ textarea {
   padding: 5px;
 }
 
+/* Past, present, and future styles specifically targeted with jQuery to determine which hour is the current hour, and to color code the textareas accordingly */
 .past {
-  background-color: rgba(165, 180, 196, 0.908);
+  background-color: rgba(145, 163, 182, 0.908);
   color: var(--light);
   
 }
@@ -88,3 +94,9 @@ color: var(--light);
   font-size: 20px;
   transition: all 0.3s ease-in-out;
 } */
+
+#currentDay,
+#currentTime {
+  color:indigo;
+  font-weight: bold;
+}
