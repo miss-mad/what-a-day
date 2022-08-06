@@ -42,10 +42,13 @@ Below are screenshots of the Horiseon webpage. Visually, it will look very simil
 
 Collaborators:
 
+Faizan Ali - TA
+
 
 List of resources used:
 
 https://momentjs.com/docs/#/displaying/format/
+https://www.tiny.cloud/blog/javascript-localstorage/#javascript-local-storage-methods
 
 ## License
 
