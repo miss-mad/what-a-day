@@ -12,15 +12,7 @@ Manage each hour of your day with this simple scheduler!
 
 ## Description
 
-💡 Remember: A README file acts like a virtual storefront to a repository. A high-quality README file explains what your application does and why you used the technologies that you did. At a bare minimum, a README needs a title and a short description explaining the what, why, and how of the project. Your README might also describe some of the challenges you faced, as well as the features you plan to implement in the future.
-
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
-
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
-- What makes your project stand out?
+This app is an easy and straightforward way to layout the work day. With the current date automatically at the top of the page, you can see the hours in dedicated blocks of time that allow you to elaborate on event details and then save those details. Powered by JavaScript, jQuery and Bootstrap, it's a clean interface that users will enjoy scheduling with.
 
 ## Deployed Application
 
@@ -44,11 +36,16 @@ Collaborators:
 
 Faizan Ali - TA
 
+Insha Sayani - fellow bootcamper
+
 
 List of resources used:
 
 https://momentjs.com/docs/#/displaying/format/
+
 https://www.tiny.cloud/blog/javascript-localstorage/#javascript-local-storage-methods
+
+https://api.jquery.com/val/
 
 ## License
 

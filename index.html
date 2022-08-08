@@ -29,7 +29,7 @@
       rel="stylesheet"
     />
     <!-- Link to incorporate the CSS styles file -->
-    <link rel="stylesheet" href="./Develop/style.css" />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
     <title>Work Day Scheduler</title>
   </head>
 
@@ -37,382 +37,205 @@
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">
-        A simple calendar app: No more over- or underestimating your
-        day!
+        A simple calendar app: No more over- or underestimating your day!
       </p>
       <p id="currentDay" class="lead"></p>
       <p id="currentTime" class="lead"></p>
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
-        <div class="row">
-          <div class="col-1 hour">
-            8 AM
-          </div>
-          <div class="col-10">
-            <textarea
-            class="form-control" id="8" placeholder="Event details here"
+      <div class="row">
+        <div class="col-1 hour">8 AM</div>
+        <div class="col-10">
+          <textarea
+            class="form-control"
+            id="8"
+            placeholder="Event details here"
             aria-label="Event text"
           ></textarea>
-          </div>
-          <div class="col-1">
-            <button type="button" class="btn btn-outline-light">SAVE</button>
-          </div>
         </div>
-
-        <div class="row">
-          <div class="col-1 hour">
-            9 AM
-          </div>
-          <div class="col-10">
-            <textarea
-            class="form-control" id="9" placeholder="Event details here"
-            aria-label="Event text"
-          ></textarea>
-          </div>
-          <div class="col-1">
-            <button type="button" class="btn btn-outline-light">SAVE</button>
-          </div>
+        <div class="col-1">
+          <button id="hour8" type="button" class="btn btn-outline-light">
+            SAVE
+          </button>
         </div>
-        
-        <div class="row">
-          <div class="col-1 hour">
-            10 AM
-          </div>
-          <div class="col-10">
-            <textarea
-            class="form-control" id="10" placeholder="Event details here"
-            aria-label="Event text"
-          ></textarea>
-          </div>
-          <div class="col-1">
-            <button type="button" class="btn btn-outline-light">SAVE</button>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-1 hour">
-            11 AM
-          </div>
-          <div class="col-10">
-            <textarea
-            class="form-control" id="11" placeholder="Event details here"
-            aria-label="Event text"
-          ></textarea>
-          </div>
-          <div class="col-1">
-            <button type="button" class="btn btn-outline-light">SAVE</button>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-1 hour">
-            12 PM
-          </div>
-          <div class="col-10">
-            <textarea
-            class="form-control" id="12" placeholder="Event details here"
-            aria-label="Event text"
-          ></textarea>
-          </div>
-          <div class="col-1">
-            <button type="button" class="btn btn-outline-light">SAVE</button>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-1 hour">
-            1 PM
-          </div>
-          <div class="col-10">
-            <textarea
-            class="form-control" id="13" placeholder="Event details here"
-            aria-label="Event text"
-          ></textarea>
-          </div>
-          <div class="col-1">
-            <button type="button" class="btn btn-outline-light">SAVE</button>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-1 hour">
-            2 PM
-          </div>
-          <div class="col-10">
-            <textarea
-            class="form-control" id="14" placeholder="Event details here"
-            aria-label="Event text"
-          ></textarea>
-          </div>
-          <div class="col-1">
-            <button type="button" class="btn btn-outline-light">SAVE</button>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-1 hour">
-            3 PM
-          </div>
-          <div class="col-10">
-            <textarea
-            class="form-control" id="15" placeholder="Event details here"
-            aria-label="Event text"
-          ></textarea>
-          </div>
-          <div class="col-1">
-            <button type="button" class="btn btn-outline-light">SAVE</button>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-1 hour">
-            4 PM
-          </div>
-          <div class="col-10">
-            <textarea
-            class="form-control" id="16" placeholder="Event details here"
-            aria-label="Event text"
-          ></textarea>
-          </div>
-          <div class="col-1">
-            <button type="button" class="btn btn-outline-light">SAVE</button>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-1 hour">
-            5 PM
-          </div>
-          <div class="col-10">
-            <textarea
-            class="form-control" id="17" placeholder="Event details here"
-            aria-label="Event text"
-          ></textarea>
-          </div>
-          <div class="col-1">
-            <button type="button" class="btn btn-outline-light">SAVE</button>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-1 hour">
-            6 PM
-          </div>
-          <div class="col-10">
-            <textarea
-            class="form-control" id="18" placeholder="Event details here"
-            aria-label="Event text"
-          ></textarea>
-          </div>
-          <div class="col-1">
-            <button type="button" class="btn btn-outline-light">SAVE</button>
-          </div>
-        </div>
-
-        <!-- <div class="row" id="19">
-          <div class="col-1 hour">
-            7 PM
-          </div>
-          <div class="col-10">
-            <textarea
-            class="form-control" placeholder="Event details here"
-            aria-label="Event text"
-          ></textarea>
-          </div>
-          <div class="col-1">
-            <button type="button" class="btn btn-outline-light">SAVE</button>
-          </div>
-        </div>
-
-        <div class="row" id="20">
-          <div class="col-1 hour">
-            8 PM
-          </div>
-          <div class="col-10">
-            <textarea
-            class="form-control" placeholder="Event details here"
-            aria-label="Event text"
-          ></textarea>
-          </div>
-          <div class="col-1">
-            <button type="button" class="btn btn-outline-light">SAVE</button>
-          </div>
-        </div>
-
-        <div class="row" id="21">
-          <div class="col-1 hour">
-            9 PM
-          </div>
-          <div class="col-10">
-            <textarea
-            class="form-control" placeholder="Event details here"
-            aria-label="Event text"
-          ></textarea>
-          </div>
-          <div class="col-1">
-            <button type="button" class="btn btn-outline-light">SAVE</button>
-          </div>
-        </div>
-
-        <div class="row" id="22">
-          <div class="col-1 hour">
-            10 PM
-          </div>
-          <div class="col-10">
-            <textarea
-            class="form-control" placeholder="Event details here"
-            aria-label="Event text"
-          ></textarea>
-          </div>
-          <div class="col-1">
-            <button type="button" class="btn btn-outline-light">SAVE</button>
-          </div>
-        </div>
-
-        <div class="row" id="23">
-          <div class="col-1 hour">
-            11 PM
-          </div>
-          <div class="col-10">
-            <textarea
-            class="form-control" placeholder="Event details here"
-            aria-label="Event text"
-          ></textarea>
-          </div>
-          <div class="col-1">
-            <button type="button" class="btn btn-outline-light">SAVE</button>
-          </div>
-        </div>
-
-        <div class="row" id="0">
-          <div class="col-1 hour">
-            12 AM
-          </div>
-          <div class="col-10">
-            <textarea
-            class="form-control" placeholder="Event details here"
-            aria-label="Event text"
-          ></textarea>
-          </div>
-          <div class="col-1">
-            <button type="button" class="btn btn-outline-light">SAVE</button>
-          </div>
-        </div>
-
-        <div class="row" id="1">
-          <div class="col-1 hour">
-            1 AM
-          </div>
-          <div class="col-10">
-            <textarea
-            class="form-control" placeholder="Event details here"
-            aria-label="Event text"
-          ></textarea>
-          </div>
-          <div class="col-1">
-            <button type="button" class="btn btn-outline-light">SAVE</button>
-          </div>
-        </div>
-
-        <div class="row" id="2">
-          <div class="col-1 hour">
-            2 AM
-          </div>
-          <div class="col-10">
-            <textarea
-            class="form-control" placeholder="Event details here"
-            aria-label="Event text"
-          ></textarea>
-          </div>
-          <div class="col-1">
-            <button type="button" class="btn btn-outline-light">SAVE</button>
-          </div>
-        </div>
-
-        <div class="row" id="3">
-          <div class="col-1 hour">
-            3 AM
-          </div>
-          <div class="col-10">
-            <textarea
-            class="form-control" placeholder="Event details here"
-            aria-label="Event text"
-          ></textarea>
-          </div>
-          <div class="col-1">
-            <button type="button" class="btn btn-outline-light">SAVE</button>
-          </div>
-        </div>
-
-        <div class="row" id="4">
-          <div class="col-1 hour">
-            4 AM
-          </div>
-          <div class="col-10">
-            <textarea
-            class="form-control" placeholder="Event details here"
-            aria-label="Event text"
-          ></textarea>
-          </div>
-          <div class="col-1">
-            <button type="button" class="btn btn-outline-light">SAVE</button>
-          </div>
-        </div>
-
-        <div class="row" id="5">
-          <div class="col-1 hour">
-            5 AM
-          </div>
-          <div class="col-10">
-            <textarea
-            class="form-control" placeholder="Event details here"
-            aria-label="Event text"
-          ></textarea>
-          </div>
-          <div class="col-1">
-            <button type="button" class="btn btn-outline-light">SAVE</button>
-          </div>
-        </div>
-
-        <div class="row" id="6">
-          <div class="col-1 hour">
-            6 AM
-          </div>
-          <div class="col-10">
-            <textarea
-            class="form-control" placeholder="Event details here"
-            aria-label="Event text"
-          ></textarea>
-          </div>
-          <div class="col-1">
-            <button type="button" class="btn btn-outline-light">SAVE</button>
-          </div>
-        </div>
-
-        <div class="row" id="7">
-          <div class="col-1 hour">
-            7 AM
-          </div>
-          <div class="col-10">
-            <textarea
-            class="form-control" placeholder="Event details here"
-            aria-label="Event text"
-          ></textarea>
-          </div>
-          <div class="col-1">
-            <button type="button" class="btn btn-outline-light">SAVE</button>
-          </div>
-        </div> -->
-
       </div>
-    </div>
+
+      <div class="row">
+        <div class="col-1 hour">9 AM</div>
+        <div class="col-10">
+          <textarea
+            class="form-control"
+            id="9"
+            placeholder="Event details here"
+            aria-label="Event text"
+          ></textarea>
+        </div>
+        <div class="col-1">
+          <button id="hour9" type="button" class="btn btn-outline-light">
+            SAVE
+          </button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-1 hour">10 AM</div>
+        <div class="col-10">
+          <textarea
+            class="form-control"
+            id="10"
+            placeholder="Event details here"
+            aria-label="Event text"
+          ></textarea>
+        </div>
+        <div class="col-1">
+          <button id="hour10" type="button" class="btn btn-outline-light">
+            SAVE
+          </button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-1 hour">11 AM</div>
+        <div class="col-10">
+          <textarea
+            class="form-control"
+            id="11"
+            placeholder="Event details here"
+            aria-label="Event text"
+          ></textarea>
+        </div>
+        <div class="col-1">
+          <button id="hour11" type="button" class="btn btn-outline-light">
+            SAVE
+          </button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-1 hour">12 PM</div>
+        <div class="col-10">
+          <textarea
+            class="form-control"
+            id="12"
+            placeholder="Event details here"
+            aria-label="Event text"
+          ></textarea>
+        </div>
+        <div class="col-1">
+          <button id="hour12" type="button" class="btn btn-outline-light">
+            SAVE
+          </button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-1 hour">1 PM</div>
+        <div class="col-10">
+          <textarea
+            class="form-control"
+            id="13"
+            placeholder="Event details here"
+            aria-label="Event text"
+          ></textarea>
+        </div>
+        <div class="col-1">
+          <button id="hour13" type="button" class="btn btn-outline-light">
+            SAVE
+          </button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-1 hour">2 PM</div>
+        <div class="col-10">
+          <textarea
+            class="form-control"
+            id="14"
+            placeholder="Event details here"
+            aria-label="Event text"
+          ></textarea>
+        </div>
+        <div class="col-1">
+          <button id="hour14" type="button" class="btn btn-outline-light">
+            SAVE
+          </button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-1 hour">3 PM</div>
+        <div class="col-10">
+          <textarea
+            class="form-control"
+            id="15"
+            placeholder="Event details here"
+            aria-label="Event text"
+          ></textarea>
+        </div>
+        <div class="col-1">
+          <button id="hour15" type="button" class="btn btn-outline-light">
+            SAVE
+          </button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-1 hour">4 PM</div>
+        <div class="col-10">
+          <textarea
+            class="form-control"
+            id="16"
+            placeholder="Event details here"
+            aria-label="Event text"
+          ></textarea>
+        </div>
+        <div class="col-1">
+          <button id="hour16" type="button" class="btn btn-outline-light">
+            SAVE
+          </button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-1 hour">5 PM</div>
+        <div class="col-10">
+          <textarea
+            class="form-control"
+            id="17"
+            placeholder="Event details here"
+            aria-label="Event text"
+          ></textarea>
+        </div>
+        <div class="col-1">
+          <button id="hour17" type="button" class="btn btn-outline-light">
+            SAVE
+          </button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-1 hour">6 PM</div>
+        <div class="col-10">
+          <textarea
+            class="form-control"
+            id="18"
+            placeholder="Event details here"
+            aria-label="Event text"
+          ></textarea>
+        </div>
+        <div class="col-1">
+          <button id="hour18" type="button" class="btn btn-outline-light">
+            SAVE
+          </button>
+        </div>
+      </div>
 
     <!-- Link to incorporate jQuery -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <!-- Link to incorporate moment.js (to display all current dates and times) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <!-- Link to incorporate the JS script file -->
-    <script src="./Develop/script.js"></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
