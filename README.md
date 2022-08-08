@@ -16,7 +16,7 @@ This app is an easy and straightforward way to layout the work day. With the cur
 
 ## Deployed Application
 
-
+https://miss-mad.github.io/what-a-day/
 
 ## Installation
 
@@ -26,9 +26,7 @@ No installation necessary.
 
 Below are screenshots of the Horiseon webpage. Visually, it will look very similar, but additional accessible measures have been integrated.
 
-![Work Day Scheduler screenshot 1](./assets/images/Horiseon_screenshot_1.JPG)
-![Work Day Scheduler screenshot 2]()
-![Work Day Scheduler screenshot 3]()
+![Work Day Scheduler screenshot 1](./assets/images/work-day-scheduler_screenshot.png)
 
 ## Credits
 
