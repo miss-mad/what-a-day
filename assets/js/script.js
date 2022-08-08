@@ -1,5 +1,5 @@
 // When the document loads in the browser, the loadEventDetails() function is ready to be executed
-$(document).ready(loadEventDetails); 
+$(document).ready(loadEventDetails);
 
 // Creates the variable today to retrieve the current day of the week, month, day of the month, and year using moment.js, then displays that info using jQuery by matching it to the same HTML ID
 var today = moment();
@@ -16,9 +16,6 @@ var now = moment().hour();
 var button = $(".btn");
 
 // These variables retrieve the text value from the textareas which have class="form-control". The subsequent variables are set up for the local storage functions below
-var eventDetails = $(".form-control").val();
-var eventDetails = "";
-eventDetails = $(".row");
 var eventsArray = [];
 
 // Function to save the text in any textarea element into an eventsArray. Each time new text is inputted, it's appended to the existing array
@@ -64,14 +61,15 @@ function loadEventDetails() {
     var scheduledHour = $(this).attr("id");
     console.log(scheduledHour);
 
-    localStorageEvents.forEach(event => {
-
-      // This if statement addresses a problem that arose when building it, but isn't a problem in the finished app: if there were multiple text inputs for the same event hour, then retrieve all of the event details from that hour
-      if (scheduledHour === event.time) {
-        $(this).val(`${event.details}`) 
-      }
-      
-    });
+// The parent if statement is a catch for if there is nothing in local storage to begin with
+    if (localStorageEvents !== null) {
+      localStorageEvents.forEach((event) => {
+        // This if statement addresses a problem that arose when building it, but isn't a problem in the finished app: if there were multiple text inputs for the same event hour, then retrieve all of the event details from that hour
+        if (scheduledHour === event.time) {
+          $(this).val(`${event.details}`);
+        }
+      });
+    }
 
     // This adds or removes classes depending on the current time
     if (scheduledHour < now) {
