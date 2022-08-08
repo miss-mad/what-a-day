@@ -24,7 +24,7 @@ No installation necessary.
 
 ## Usage
 
-Below are screenshots of the work day scheduler.
+Below is a screenshot of the work day scheduler.
 
 ![Work Day Scheduler screenshot 1](./assets/images/work-day-scheduler_screenshot.png)
 
