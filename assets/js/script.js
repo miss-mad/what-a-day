@@ -12,10 +12,10 @@ $("#currentTime").text(
 // Creates the variable now to be used later in the if/else/if statement to determine which is the current hour and color code the textareas holding the event details accordingly.
 var now = moment().hour();
 
-// Creates the variable button which is set equal to the jQuery selector which selects element with the matching class, which is the save button.
+// Creates the variable button which is set equal to the jQuery selector which selects the HTML element with the matching class, which is the save button.
 var button = $(".btn");
 
-// These variables retrieve the text value from the textareas which have the class .form-control. The subsequent variables are set up for the local storage functions
+// These variables retrieve the text value from the textareas which have class="form-control". The subsequent variables are set up for the local storage functions below
 var eventDetails = $(".form-control").val();
 var eventDetails = "";
 eventDetails = $(".row");
@@ -55,9 +55,6 @@ function saveEventDetails() {
 // Function to load the saved event text from local storage upon page refresh
 function loadEventDetails() {
   console.log("ready");
-  // When webpage loads
-  // get infomation from localstoreage
-  // display the information in the correct textareas
 
   var localStorageEvents = JSON.parse(localStorage.getItem("eventsArray"));
   console.log("EVENTS: ", localStorageEvents);
@@ -76,7 +73,7 @@ function loadEventDetails() {
       
     });
 
-    // As mentioned in the comment above, this adds or removes classes depending on the current time
+    // This adds or removes classes depending on the current time
     if (scheduledHour < now) {
       // console.log("This is in the past");
       $(this).addClass("past");

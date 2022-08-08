@@ -1,4 +1,4 @@
-/* CSS variables to make stylesheet more efficient */
+/* CSS variables to make stylesheet more efficient for repeated colors*/
 :root {
   --light: #f8f9fa;
   --black: black;
@@ -32,12 +32,6 @@ textarea {
   border-bottom: 8px solid rgb(87, 83, 83);
 }
 
-/* Removed some styles that weren't being used */
-
-/* .description {
-  white-space: pre-wrap;
-} */
-
 /* Altered the starter code formatting of .row */
 .row {
   height: 80px;
@@ -46,10 +40,6 @@ textarea {
   align-items: center;
   text-align: center;
 }
-
-/* .time-block {
-  text-align: center;
-} */
 
 .hour {
   background-color: rgb(60, 115, 176);
@@ -79,21 +69,6 @@ textarea {
 background-color: rgb(60, 115, 176);
 color: var(--light);
 }
-
-
-/* Use if I import the fontawesome save icon button */
-/* .saveBtn {
-  border-left: 1px solid var(--black);
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background-color: #06aed5;
-  color: var(--light);
-}
-
-.saveBtn i:hover {
-  font-size: 20px;
-  transition: all 0.3s ease-in-out;
-} */
 
 #currentDay,
 #currentTime {

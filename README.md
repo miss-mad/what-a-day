@@ -1,4 +1,4 @@
-# Work Day Scheduler Starter Code
+# Work Day Scheduler
 Manage each hour of your day with this simple scheduler!
 
 ## Table of Contents
@@ -12,7 +12,7 @@ Manage each hour of your day with this simple scheduler!
 
 ## Description
 
-This app is an easy and straightforward way to layout the work day. With the current date automatically at the top of the page, you can see the hours in dedicated blocks of time that allow you to elaborate on event details and then save those details. Powered by JavaScript, jQuery and Bootstrap, it's a clean interface that users will enjoy scheduling with.
+This app is an easy and straightforward way to layout the work day. With the current date automatically at the top of the page, you can see the hours in dedicated blocks of time that allow you to elaborate on event details and then save those details. Powered by JavaScript, jQuery, Bootstrap and moment.js, this is an app with a clean interface that will allow users to enjoy scheduling.
 
 ## Deployed Application
 
