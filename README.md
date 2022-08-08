@@ -24,7 +24,7 @@ No installation necessary.
 
 ## Usage
 
-Below are screenshots of the Horiseon webpage. Visually, it will look very similar, but additional accessible measures have been integrated.
+Below are screenshots of the work day scheduler.
 
 ![Work Day Scheduler screenshot 1](./assets/images/work-day-scheduler_screenshot.png)
 
